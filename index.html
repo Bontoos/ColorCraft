@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorCraft - Professional Color Palette Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXX"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎨 ColorCraft</h1>
+            <div class="header-controls">
+                <button id="upgrade-btn" class="premium-btn">Go Premium</button>
+                <div class="usage-counter">
+                    <span id="usage-text">Free uses: <span id="uses-left">5</span>/5</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Ad Banner -->
+    <div class="ad-banner top-ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXX"
+             data-ad-slot="XXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+
+    <main class="container">
+        <div class="content-wrapper">
+            <!-- Left Sidebar Ad -->
+            <div class="sidebar-ad left-ad">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXX"
+                     data-ad-slot="XXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+            </div>
+
+            <div class="main-content">
+                <div class="controls-section">
+                    <div class="control-group">
+                        <label for="color-count">Number of Colors:</label>
+                        <input type="range" id="color-count" min="2" max="8" value="5">
+                        <span id="color-count-display">5</span>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="harmony-type">Color Harmony:</label>
+                        <select id="harmony-type">
+                            <option value="complementary">Complementary</option>
+                            <option value="triadic">Triadic</option>
+                            <option value="analogous">Analogous</option>
+                            <option value="monochromatic">Monochromatic</option>
+                            <option value="tetradic">Tetradic</option>
+                            <option value="split-complementary">Split Complementary</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="base-color">Base Color:</label>
+                        <input type="color" id="base-color" value="#3498db">
+                    </div>
+
+                    <button id="generate-btn" class="generate-btn">Generate Palette</button>
+                    <button id="export-btn" class="export-btn">Export Palette</button>
+                </div>
+
+                <!-- Inline Ad -->
+                <div class="ad-inline">
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-XXXXXXXXX"
+                         data-ad-slot="XXXXXXXXX"></ins>
+                </div>
+
+                <div id="palette-container" class="palette-container">
+                    <!-- Color palette will be generated here -->
+                </div>
+
+                <div class="palette-info">
+                    <h3>Color Codes</h3>
+                    <div id="color-codes" class="color-codes">
+                        <!-- Color codes will be displayed here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar Ad -->
+            <div class="sidebar-ad right-ad">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXX"
+                     data-ad-slot="XXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Ad Banner -->
+    <div class="ad-banner bottom-ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXX"
+             data-ad-slot="XXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+
+    <!-- Premium Modal -->
+    <div id="premium-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upgrade to Premium</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Monthly</h3>
+                    <div class="price">$4.99/month</div>
+                    <ul>
+                        <li>Unlimited palette generation</li>
+                        <li>No ads</li>
+                        <li>Export to multiple formats</li>
+                        <li>Save palettes</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="monthly">Subscribe Monthly</button>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Yearly</h3>
+                    <div class="price">$39.99/year</div>
+                    <div class="savings">Save 33%!</div>
+                    <ul>
+                        <li>Unlimited palette generation</li>
+                        <li>No ads</li>
+                        <li>Export to multiple formats</li>
+                        <li>Save palettes</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="yearly">Subscribe Yearly</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Usage Limit Modal -->
+    <div id="limit-modal" class="modal">
+        <div class="modal-content">
+            <h2>Free Usage Limit Reached</h2>
+            <p>You've used all your free palette generations for today. Upgrade to premium for unlimited access!</p>
+            <button id="upgrade-from-limit" class="premium-btn">Upgrade Now</button>
+            <p class="small-text">Or wait 24 hours for your free uses to reset.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
